@@ -115,34 +115,82 @@ export default {
     dialog: false,
     drawer: null,
     items: [
-      { icon: "contacts", text: "门诊挂号", id: "out_reg" },
-      { icon: "history", text: "划价收款", id: "out_cash" },
-      { icon: "content_copy", text: "交班结算", id: "out_chk" },
-      { icon: "keyboard", text: "发票号管理", id: "out_receipt" },
-      {
-        icon: "keyboard_arrow_up",
+      { 
+        icon: "contacts", 
         "icon-alt": "keyboard_arrow_down",
-        text: "查询与统计",
-        model: true,
-        children: [
-          { text: "挂号明细", id: "detail_reg" },
-          { text: "收款明细", id: "detail_cash" },
-          { text: "交班明细", id: "detail_chk" },
-          { text: "退号退款明细", id: "detail_undo" },
-          { text: "操作日志", id: "detail_op" }
-        ]
-      },
-      {
-        icon: "settings",
-        "icon-alt": "keyboard_arrow_down",
-        text: "管理与维护",
+        text: "入院资料", 
         model: false,
         children: [
-          { text: "收费词典查询", id: "mg_dict" },
-          { text: "数据分析", id: "mg_analyse" },
-          { text: "发票管理", id: "mg_invoice" }
+          { text: "患者列表", id: "in01" },
+          { text: "住院信息", id: "in02" },
+          { text: "病案首页", id: "in03" },
+          { text: "入院记录", id: "in04" },
+          { text: "表格病历", id: "in05" },
+          { text: "通用记录单", id: "in06" }
+        ]
+       },
+      { 
+        icon: "history", 
+        "icon-alt": "keyboard_arrow_down",
+        text: "住院资料", 
+        model: false,
+        children: [
+          { text: "医嘱", id: "cur01" },
+          { text: "病程记录", id: "cur02" },
+          { text: "检验",id: "cur03" },
+          { text: "检查", id: "cur04" },
+          { text: "体温单", id: "cur05" },
+          { text: "手术资料", id: "cur06" },
+          { text: "谈话记录", id: "cur07" },
+          { text: "病情告知书", id: "cur08" },
+          { text: "讨论记录", id: "cur09" },
+          { text: "报告表", id: "cur10" },
+          { text: "跨科处置", id: "cur11" },
+          { text: "会诊", id: "cur12" },
+          { text: "院感申请", id: "cur13" }
         ]
       },
+      { 
+        icon: "content_copy", 
+        "icon-alt": "keyboard_arrow_down",
+        text: "出院资料", 
+        model: false,
+        children: [
+          { text: "出院小结", id: "out01" },
+          { text: "死亡资料", id: "out02" },
+          { text: "24小时入院死亡记录",id: "out03" },
+          { text: "24小时入出院记录", id: "out04" },
+          { text: "打印病历", id: "out05" },
+          { text: "归档提交", id: "out06" },
+          { text: "反归档申请", id: "out07" }          
+        ]
+      },
+      { 
+        icon: "content_copy", 
+        "icon-alt": "keyboard_arrow_down",
+        text: "模板管理", 
+        model: false,
+        children: [
+          { text: "协定医嘱管理",id: "m01" },
+          { text: "病程模板管理", id: "m02" }   
+        ]
+      },
+      { 
+        icon: "keyboard", 
+        "icon-alt": "keyboard_arrow_down",
+        text: "收费信息", 
+        model: false,
+        children: [
+          { text: "费用明细",id: "f01" },
+          { text: "费用日清单", id: "f02" },
+          { text: "诊疗项目词典", id: "f03" },
+          { text: "药品动态库存", id: "f04" }
+        ]
+      },
+      { icon: "content_copy", text: "传染病报告", id: "out_chk" },
+      { icon: "keyboard", text: "慢性病报告", id: "out_receipt" },
+      { icon: "content_copy", text: "历史病历", id: "out_chk1" },
+      
       { icon: "help", text: "退出登录", id: "logout" }
     ]
   }),
